@@ -16,9 +16,12 @@
         }
 
         header {
-            background-color: #1b4bd1;
-            color: skyblue;
-            padding: 10px 20px;
+            background-image: url('https://imagenes.20minutos.es/files/image_990_556/files/fp/uploads/imagenes/2024/01/18/inteligencia-artificial-1.r_d.600-338-8250.jpeg'); /* URL de la imagen */
+            background-size: cover; /* Asegura que la imagen cubra todo el espacio */
+            background-position: center; /* Centra la imagen */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+            color: white; /* Cambia el color del texto para que sea visible sobre la imagen */
+            padding: 20px;
             text-align: center;
         }
 
@@ -40,6 +43,7 @@
             flex-wrap: nowrap; /* Evita que los botones se ajusten en varias filas */
             overflow-x: auto; /* Agrega barra de desplazamiento horizontal */
             white-space: nowrap; /* Evita que los botones se rompan en varias líneas */
+            justify-content: center; /* Centra los botones horizontalmente */
         }
 
         .main-nav::-webkit-scrollbar {
@@ -94,6 +98,50 @@
             border-radius: 8px;
             margin: 10px 0;
         }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: skyblue;
+            margin-top: 20px;
+        }
+
+        .section-nav {
+            display: flex;
+            gap: 10px;
+            overflow-x: auto; /* Agrega barra de desplazamiento horizontal */
+            white-space: nowrap; /* Evita que los enlaces se rompan en varias líneas */
+            padding: 10px 0;
+        }
+
+        .section-nav::-webkit-scrollbar {
+            height: 8px; /* Altura de la barra de desplazamiento */
+        }
+
+        .section-nav::-webkit-scrollbar-thumb {
+            background: linear-gradient(90deg, #00b7ff, #1b4bd1, #00b7ff); /* Color del pulgar de la barra */
+            border-radius: 4px;
+        }
+
+        .section-nav::-webkit-scrollbar-track {
+            background-color: #ccc; /* Color del fondo de la barra */
+        }
+
         .menu-button {
                 background: linear-gradient(90deg, #00b7ff, #1b4bd1, #00b7ff);
                 background-size: 200% 100%; /* Duplica el tamaño del fondo para permitir el movimiento */
@@ -105,7 +153,12 @@
                 text-shadow: 2px 2px 4px  rgba(255, 255, 255, 0.5);
                 transition: color 0.5s ease, text-shadow 0.5s ease, transform 0.3s ease;
                 display: inline-block;
-            }
+        }
+
+        .menu-button:hover {
+            background-color: #45a049;
+            transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
+        }
     </style>
 </head>
 <body>
@@ -119,6 +172,7 @@
         <button class="menu-button" onclick="location.href='#ventajas'">Ventajas</button>
         <button class="menu-button" onclick="location.href='#desventajas'">Desventajas</button>
         <button class="menu-button" onclick="location.href='#conclusion'">Conclusión</button>
+        <button class="menu-button" onclick="location.href='#ejemplos'">Ejemplos</button>
     </nav>
     <section id="introduccion">
         <h2>Introducción</h2>
@@ -183,7 +237,5 @@
             <a class="menu-button" href="https://davinci.ai/app" target="_blank">Da Vinci</a>
         </nav>
     </section>
-</body>
-</html>
 </body>
 </html>
