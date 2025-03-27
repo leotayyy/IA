@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inteligencia Artificial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #1b4bd1;
+            color: skyblue;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .main-nav {
+            background-color: #333;
+            padding: 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        .main-nav .menu-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+        .main-nav .menu-button:hover {
+            background-color: #45a049;
+        }
+        .menu-button {
+                background: linear-gradient(90deg, #00b7ff, #1b4bd1, #00b7ff);
+                background-size: 200% 100%; /* Duplica el tamaño del fondo para permitir el movimiento */
+                color: white;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+                font-weight: bold;
+                text-shadow: 2px 2px 4px  rgba(255, 255, 255, 0.5);
+                transition: color 0.5s ease, text-shadow 0.5s ease, transform 0.3s ease;
+                display: inline-block;
+            }
+
+            .menu-button:hover {
+                color: #ffffff; /* Cambia el color del texto al pasar el cursor */
+                text-shadow: 2px 2px 4px  rgba(255, 255, 255, 0.5);
+                animation: gradient-move 2s ease-in-out infinite; /* Animación más fluida */
+                transform: scale(1.1); /* Aplica el efecto de zoom */
+            }
+
+            @keyframes gradient-move {
+                0% {
+                    background-position: 0% 50%;
+                }
+                50% {
+                    background-position: 50% 50%; /* Movimiento más natural en el medio */
+                }
+                100% {
+                    background-position: 100% 50%;
+                }
+            }
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: skyblue;
+            margin-top: 20px;
+        }
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 5px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Inteligencia Artificial</h1>
+    </header>
+    <nav class="main-nav">
+        <button class="menu-button" onclick="location.href='#introduccion'">Introducción</button>
+        <button class="menu-button" onclick="location.href='#importancia'">Importancia</button>
+        <button class="menu-button" onclick="location.href='#funcionamiento'">Funcionamiento</button>
+        <button class="menu-button" onclick="location.href='#ventajas'">Ventajas</button>
+        <button class="menu-button" onclick="location.href='#desventajas'">Desventajas</button>
+        <button class="menu-button" onclick="location.href='#conclusion'">Conclusión</button>
+        <button class="menu-button" onclick="location.href='#ejemplos'">ejemplos</button>
+    </nav>
+    <section id="introduccion">
+        <h2>Introducción</h2>
+        <p>
+            La Inteligencia Artificial (IA) es un campo de la informática que busca desarrollar sistemas capaces de realizar tareas que requieren inteligencia humana, como el aprendizaje, el razonamiento y la toma de decisiones.
+        </p>
+        <img src="https://imagenes.heraldo.es/files/image_990_556/uploads/imagenes/2025/02/16/la-fusion-entre-mente-y-maquina-una-representacion-visual-de-la-inteligencia-artificial-conectada-al-mundo-digital-y-su-impacto-en-la-sociedad.webp" alt="Representación de la Inteligencia Artificial">
+    </section>
+    <section id="importancia">
+        <h2>La importancia de la Inteligencia Artificial</h2>
+        <p>
+            La Inteligencia Artificial (IA) ha revolucionado múltiples aspectos de nuestra vida, convirtiéndose en una herramienta esencial en distintos ámbitos.
+        </p>
+        <img src="https://lamenteesmaravillosa.com/wp-content/uploads/2023/07/inteligencia-artificial-redes-sociales-1200x642.jpg?auto=webp&quality=60&width=1920&crop=16:9,smart,safe" alt="Impacto de la IA en la sociedad">
+    </section>
+    <section id="funcionamiento">
+        <h2>¿Cómo funciona la Inteligencia Artificial?</h2>
+        <p>
+            La Inteligencia Artificial (IA) funciona analizando datos, aprendiendo de ellos y tomando decisiones. Primero, recopila y procesa información, como texto, imágenes o voz.
+        </p>
+        <img src="https://media.licdn.com/dms/image/v2/D4E12AQG_NXSCdIDdvQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1685473421339?e=2147483647&v=beta&t=nmOYSLFch-VG7ciuB51HYNJV6XS-S6RNjfOAvfYPq-w" alt="Funcionamiento de la IA">
+    </section>
+    <section id="ventajas">
+        <h2>Ventajas</h2>
+        <ul>
+            <li>Mayor precisión y reducción de errores</li>
+            <li>Mejora la experiencia del usuario</li>
+            <li>Innovación en múltiples sectores</li>
+            <li>Optimización de recursos</li>
+            <li>Automatización en trabajos repetitivos</li>
+        </ul>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScchK3q4yZlAE5pBpuGC6_q5fPLq4mn1e4Uw&s" alt="Ventajas de la IA">
+    </section>
+    <section id="desventajas">
+        <h2>Desventajas</h2>
+        <ul>
+            <li>Dependencia tecnológica</li>
+            <li>Impacto en el empleo</li>
+            <li>Preocupaciones éticas</li>
+            <li>Costos elevados de implementación</li>
+        </ul>
+        <img src="https://www.inesdi.com/sites/default/files/inline-images/peligros-y-desventajas-de-la-inteligencia-artificial-2.jpeg">
+    </section>
+    <section id="conclusion">
+        <h2>Conclusión</h2>
+        <p>
+            La Inteligencia Artificial es una herramienta poderosa que está transformando el mundo. Sin embargo, es importante abordar sus desafíos éticos y sociales.
+        </p>
+        <img src="https://ailabschool.com/wp-content/uploads/2023/03/inteligencia-artificial-1024x583.jpg">
+    </section>
+    <section id="ejemplos">
+        <h2>Ejemplos de IA:</h2>
+        <nav class="section-nav">
+            <a class="menu-button" href="https://chat.openai.com" target="_blank">ChatGPT</a>
+            <a class="menu-button" href="https://www.blackbox.ai" target="_blank">Blackbox AI</a>
+            <a class="menu-button" href="https://gemini.google.com/app?hl=es-MX" target="_blank">Gemini</a>
+            <a class="menu-button" href="https://davinci.ai/app" target="_blank">Da Vinci</a>
+        </nav>
+    </section>
+</body>
+</html>
