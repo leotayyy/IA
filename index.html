@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inteligencia Artificial</title>
     <style>
+        /* Estilos generales */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -13,19 +14,20 @@
             background-color: #f4f4f9;
             color: #333;
         }
-        @media(max-width:768px){
-            item{width: 100%;}
-        }
+
         header {
             background-color: #1b4bd1;
             color: skyblue;
             padding: 10px 20px;
             text-align: center;
         }
+
         h1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
         }
+
+        /* Navegación principal */
         .main-nav {
             background-color: #333;
             padding: 10px;
@@ -33,21 +35,64 @@
             top: 0;
             z-index: 1000;
             display: flex;
-            justify-content: center;
+            justify-content: flex-start; /* Alinea los botones al inicio */
             gap: 10px;
+            flex-wrap: nowrap; /* Evita que los botones se ajusten en varias filas */
+            overflow-x: auto; /* Agrega barra de desplazamiento horizontal */
+            white-space: nowrap; /* Evita que los botones se rompan en varias líneas */
         }
+
+        .main-nav::-webkit-scrollbar {
+            height: 8px; /* Altura de la barra de desplazamiento */
+        }
+
+        .main-nav::-webkit-scrollbar-thumb {
+            background: linear-gradient(90deg, #00b7ff, #1b4bd1, #00b7ff); /* Color del pulgar de la barra */
+            border-radius: 4px;
+        }
+
+        .main-nav::-webkit-scrollbar-track {
+            background-color: #ccc; /* Color del fondo de la barra */
+        }
+
         .main-nav .menu-button {
-            background-color: #4CAF50;
+            background: linear-gradient(90deg, #00b7ff, #1b4bd1, #00b7ff);
             color: white;
             border: none;
             padding: 10px 15px;
             border-radius: 5px;
-            cursor: pointer;
             font-size: 1rem;
-            transition: background-color 0.3s ease;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
+
         .main-nav .menu-button:hover {
             background-color: #45a049;
+            transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
+        }
+
+        /* Secciones */
+        section {
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #1b4bd1;
+        }
+
+        section p {
+            margin-bottom: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin: 10px 0;
         }
         .menu-button {
                 background: linear-gradient(90deg, #00b7ff, #1b4bd1, #00b7ff);
@@ -61,50 +106,6 @@
                 transition: color 0.5s ease, text-shadow 0.5s ease, transform 0.3s ease;
                 display: inline-block;
             }
-
-            .menu-button:hover {
-                color: #ffffff; /* Cambia el color del texto al pasar el cursor */
-                text-shadow: 2px 2px 4px  rgba(255, 255, 255, 0.5);
-                animation: gradient-move 2s ease-in-out infinite; /* Animación más fluida */
-                transform: scale(1.1); /* Aplica el efecto de zoom */
-            }
-
-            @keyframes gradient-move {
-                0% {
-                    background-position: 0% 50%;
-                }
-                50% {
-                    background-position: 50% 50%; /* Movimiento más natural en el medio */
-                }
-                100% {
-                    background-position: 100% 50%;
-                }
-            }
-        section {
-            padding: 20px;
-            margin: 20px auto;
-            max-width: 800px;
-            background: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: skyblue;
-            margin-top: 20px;
-        }
-        ul {
-            margin: 10px 0;
-            padding-left: 20px;
-        }
-        ul li {
-            margin-bottom: 5px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            margin: 10px 0;
-        }
     </style>
 </head>
 <body>
@@ -118,7 +119,6 @@
         <button class="menu-button" onclick="location.href='#ventajas'">Ventajas</button>
         <button class="menu-button" onclick="location.href='#desventajas'">Desventajas</button>
         <button class="menu-button" onclick="location.href='#conclusion'">Conclusión</button>
-        <button class="menu-button" onclick="location.href='#ejemplos'">ejemplos</button>
     </nav>
     <section id="introduccion">
         <h2>Introducción</h2>
@@ -132,14 +132,16 @@
         <p>
             La Inteligencia Artificial (IA) ha revolucionado múltiples aspectos de nuestra vida, convirtiéndose en una herramienta esencial en distintos ámbitos.
         </p>
-        <img src="https://lamenteesmaravillosa.com/wp-content/uploads/2023/07/inteligencia-artificial-redes-sociales-1200x642.jpg?auto=webp&quality=60&width=1920&crop=16:9,smart,safe" alt="Impacto de la IA en la sociedad">
+        <img src="https://lamenteesmaravillosa.com/wp-content/uploads/2023/07/inteligencia-artificial-redes-sociales-1200x642.jpg?auto=webp&quality=60&width=1920&crop=16:9,smart,safe" alt="Impacto de la IA en la sociedad"><br>
+        <button class="menu-button" onclick="location.href='#'">Volver al Inicio</button>
     </section>
     <section id="funcionamiento">
         <h2>¿Cómo funciona la Inteligencia Artificial?</h2>
         <p>
             La Inteligencia Artificial (IA) funciona analizando datos, aprendiendo de ellos y tomando decisiones. Primero, recopila y procesa información, como texto, imágenes o voz.
         </p>
-        <img src="https://media.licdn.com/dms/image/v2/D4E12AQG_NXSCdIDdvQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1685473421339?e=2147483647&v=beta&t=nmOYSLFch-VG7ciuB51HYNJV6XS-S6RNjfOAvfYPq-w" alt="Funcionamiento de la IA">
+        <img src="https://media.licdn.com/dms/image/v2/D4E12AQG_NXSCdIDdvQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1685473421339?e=2147483647&v=beta&t=nmOYSLFch-VG7ciuB51HYNJV6XS-S6RNjfOAvfYPq-w" alt="Funcionamiento de la IA"><br>
+        <button class="menu-button" onclick="location.href='#'">Volver al Inicio</button>
     </section>
     <section id="ventajas">
         <h2>Ventajas</h2>
@@ -150,8 +152,9 @@
             <li>Optimización de recursos</li>
             <li>Automatización en trabajos repetitivos</li>
         </ul>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScchK3q4yZlAE5pBpuGC6_q5fPLq4mn1e4Uw&s" alt="Ventajas de la IA">
-    </section>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScchK3q4yZlAE5pBpuGC6_q5fPLq4mn1e4Uw&s" alt="Ventajas de la IA"><br>
+        <button class="menu-button" onclick="location.href='#'">Volver al Inicio</button>
+        </section>
     <section id="desventajas">
         <h2>Desventajas</h2>
         <ul>
@@ -160,14 +163,16 @@
             <li>Preocupaciones éticas</li>
             <li>Costos elevados de implementación</li>
         </ul>
-        <img src="https://www.inesdi.com/sites/default/files/inline-images/peligros-y-desventajas-de-la-inteligencia-artificial-2.jpeg">
+        <img src="https://www.inesdi.com/sites/default/files/inline-images/peligros-y-desventajas-de-la-inteligencia-artificial-2.jpeg"><br>
+        <button class="menu-button" onclick="location.href='#'">Volver al Inicio</button>
     </section>
     <section id="conclusion">
         <h2>Conclusión</h2>
         <p>
             La Inteligencia Artificial es una herramienta poderosa que está transformando el mundo. Sin embargo, es importante abordar sus desafíos éticos y sociales.
         </p>
-        <img src="https://ailabschool.com/wp-content/uploads/2023/03/inteligencia-artificial-1024x583.jpg">
+        <img src="https://ailabschool.com/wp-content/uploads/2023/03/inteligencia-artificial-1024x583.jpg"><br>
+        <button class="menu-button" onclick="location.href='#'">Volver al Inicio</button>
     </section>
     <section id="ejemplos">
         <h2>Ejemplos de IA:</h2>
@@ -178,5 +183,7 @@
             <a class="menu-button" href="https://davinci.ai/app" target="_blank">Da Vinci</a>
         </nav>
     </section>
+</body>
+</html>
 </body>
 </html>
